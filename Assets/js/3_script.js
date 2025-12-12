@@ -8,6 +8,7 @@ function paint(){
     ele1.style.backgroundColor = 'yellow'
 }
 
+
  
 
 

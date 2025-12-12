@@ -1,6 +1,4 @@
-/* EXERCISE NUMBER FOUR */
-
-
+/* EXERCISE THREE - Number 1/2:*/
 
 let divBox = document.querySelector(".divBox");
 divBox.style.marginTop = "25px";
@@ -38,3 +36,32 @@ element3.addEventListener("click", function(){
 element4.addEventListener("click", function(){
     element4.innerHTML = element4.style.backgroundColor = "black";
 }); 
+
+
+
+/* EXERCISE THREE - Number 3:*/
+let colors = "";
+
+let boxStyle = document.querySelector("#key");
+
+let divBox2 = document.querySelector(".divBox2");
+divBox2.style.paddingTop = "25px";
+divBox2.style.paddingBottom = "25px";
+
+boxStyle.style.width = "200px";
+boxStyle.style.height = "200px";
+boxStyle.style.border = "1px solid khaki";
+
+
+document.addEventListener('keydown', function (event) {
+if (event.key === 'a' || event.key === "A") {
+    colors = "pink";
+    boxStyle.style.backgroundColor = colors;
+} else if (event.key === 's' || event.key === "S") {
+    colors = "orange";
+    boxStyle.style.backgroundColor = colors;
+} else if (event.key === 'd' || event.key === "D") {
+    colors = "lightblue";
+    boxStyle.style.backgroundColor = colors;
+}
+})
