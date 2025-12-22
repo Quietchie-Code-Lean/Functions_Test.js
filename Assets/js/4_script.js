@@ -63,5 +63,31 @@ if (event.key === 'a' || event.key === "A") {
 } else if (event.key === 'd' || event.key === "D") {
     colors = "lightblue";
     boxStyle.style.backgroundColor = colors;
+};
+});
+
+/* EXERCISE THREE - Number 4:*/
+
+let divBoxAdd = document.querySelector(".divBoxAdd")
+
+document.addEventListener("keydown", function(event) {
+if (event.key === "q" || event.key === "Q") {
+    addColorElement("purple")
+} else if (event.key === "w" || event.key === "W") {
+    addColorElement("gray")
+}else if (event.key === "e" || event.key === "E") {
+    addColorElement("brown")
+}});
+
+
+function addColorElement(){
+    elements = divBoxAdd.querySelectorAll("div")
+    if(elements.lenght < 0){
+        divBoxAdd.style.backgroundColor = setColor;
+    }else{
+        addedBox = document.createElement("div");
+        addedBox.textContent("Added Hello Javascript6")
+        divBoxAdd.style.backgroundColor = setColor;
+    }
+    
 }
-})
